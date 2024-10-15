@@ -1,10 +1,12 @@
 import { defineConfig } from 'vite';
+import path from 'path';
 import laravel from 'laravel-vite-plugin';
 import svgr from "vite-plugin-svgr";
 import react from '@vitejs/plugin-react';
 
 const port = 5173;
 const origin = `${process.env.DDEV_PRIMARY_URL}:${port}`;
+console.log()
 export default defineConfig({
     server: {
         // respond to all network requests:
@@ -22,4 +24,9 @@ export default defineConfig({
         react(),
         svgr()
     ],
+    resolve: {
+        alias: {
+            "@": path.resolve(__dirname, "./resources"),
+        },
+    },
 });

@@ -1,4 +1,4 @@
-import Logo from '../../assets/svgs/givecloud-logo.svg?react';
+import Logo from '@/assets/svgs/givecloud-logo.svg?react';
 
 const Hello = () => {
     return (
