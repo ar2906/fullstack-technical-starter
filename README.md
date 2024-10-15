@@ -34,7 +34,7 @@ Install Laravel's stuff
 Build your assets, and watch for changes
 `ddev npm run dev`
 
-Note: on Windows, you may have issues with `ddev npm run dev`. If you run into issues, please run `ddev npm run build` whenever you want to see your changes. 
+> Note: on Windows, you may have issues with `ddev npm run dev`. If you run into issues, please run `ddev npm run build` whenever you want to see your changes. 
 
 #### We are good to go!
 Your local testing environment is now ready to be accessed here `https://fullstack-technical-starter.ddev.site/` 
